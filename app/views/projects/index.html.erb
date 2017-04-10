@@ -1,0 +1,29 @@
+<h1>All Projects</h1>
+
+<%= link_to '创建项目', new_project_path %>
+
+<table>
+  <tr>
+    <th>项目简称</th>
+    <th>项目全称</th>
+    <th>项目类型</th>
+    <th>项目开始时间</th>
+    <th>项目结束时间</th>
+  </tr>
+
+  <% @projects.each do |project| %>
+    <% unless project.deleted_at %>
+    <tr>
+      <td><%= project.abbr_name %></td>
+      <td><%= project.name %></td>
+      <td><%= project.proj_types %></td>
+      <td><%= project.proj_start_time %></td>
+      <td><%= project.proj_end_time %></td>
+      <td><%= link_to '查看详情', project_path(project) %></td>
+      <td><%= link_to '编辑项目', edit_project_path(project) %></td>
+      <td><%= link_to '删除项目', project_path(project), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  <% end %>
+<table>
+

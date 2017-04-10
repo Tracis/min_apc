@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  abbr_name: MyString
+  name: MyString
+  type: 
+  proj_start_time: 2017-04-10 14:09:12
+  proj_end_time: 2017-04-10 14:09:12
+
+two:
+  abbr_name: MyString
+  name: MyString
+  type: 
+  proj_start_time: 2017-04-10 14:09:12
+  proj_end_time: 2017-04-10 14:09:12

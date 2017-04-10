@@ -1,0 +1,26 @@
+<p>
+  <strong>项目简称:</strong>
+  <%= @project.abbr_name %>
+</p>
+
+<p>
+  <strong>项目全称:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>项目类型:</strong>
+  <%= @project.proj_types %>
+</p>
+
+<p>
+  <strong>项目开始时间:</strong>
+  <%= @project.proj_start_time %>
+</p>
+
+<p>
+  <strong>项目结束时间:</strong>
+  <%= @project.proj_end_time %>
+</p>
+
+<%= link_to '返回项目列表', projects_path %>
