@@ -3,13 +3,15 @@
 one:
   abbr_name: MyString
   name: MyString
-  type: 
-  proj_start_time: 2017-04-10 14:09:12
-  proj_end_time: 2017-04-10 14:09:12
+  proj_types: MyString
+  proj_start_time: 2017-04-11 17:22:20
+  proj_end_time: 2017-04-11 17:22:20
+  deleted_at: 2017-04-11 17:22:20
 
 two:
   abbr_name: MyString
   name: MyString
-  type: 
-  proj_start_time: 2017-04-10 14:09:12
-  proj_end_time: 2017-04-10 14:09:12
+  proj_types: MyString
+  proj_start_time: 2017-04-11 17:22:20
+  proj_end_time: 2017-04-11 17:22:20
+  deleted_at: 2017-04-11 17:22:20

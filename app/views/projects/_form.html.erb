@@ -1,44 +1,63 @@
-<%= form_for @project do |f| %>
+<%= form_for @project, :html => { :class => "form-horizontal project" } do |f| %>
+
   <% if @project.errors.any? %>
-    <div id = "error_explanation">
-      <h2>
-        <%= pluralize(@project.errors.count, "error") %>prohibited
-        this article from being saved:
-      </h2>
-      <ul>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
         <% @project.errors.full_messages.each do |msg| %>
-      	  <li><%= msg %></li>
-      	<% end %>
-      </ul>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
     </div>
   <% end %>
 
-  <p>
-    <%= f.label :项目简称 %><br>
-    <%= f.text_area :abbr_name %>
-  </p>
+  <div class="form-group">
+    <%= f.label :项目简称, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :abbr_name, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:abbr_name) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :项目全称, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:name) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :项目类型, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :proj_types, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:proj_types) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :项目开始时间, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :proj_start_time, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:proj_start_time) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :项目结束时间, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :proj_end_time, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:proj_end_time) %>
+  </div>
+  
 
-  <p>
-    <%= f.label :项目全称 %><br>
-    <%= f.text_area :name %>
-  </p>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                projects_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
 
-  <p>
-    <%= f.label :项目类型 %><br>
-    <%= f.text_area :proj_types %>
-  </p>
-
-  <p>
-    <%= f.label :项目开始时间 %><br>
-    <%= f.text_area :proj_start_time %>
-  </p>
-
-  <p>
-    <%= f.label :项目开始时间 %><br>
-    <%= f.text_area :proj_end_time %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
 <% end %>
