@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_groups
+  resources :users
   resources :projects
   
   root 'projects#index'

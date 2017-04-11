@@ -1394,3 +1394,200 @@ Processing by ProjectsController#index as HTML
   [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
   Rendered projects/index.html.erb within layouts/application (2.4ms)
 Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20170411122054)
+  [1m[35m (87.0ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `email` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20170411122054')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'my_apc'
+  AND fk.table_name = 'projects'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `projects`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'my_apc'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:22:50 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 1176ms (Views: 1167.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-11 20:22:51 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-11 20:22:51 +0800
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:23:47 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:24:43 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:24:44 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:24:46 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-11 20:24:46 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:24:47 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-11 20:24:48 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:24:48 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUserGroups (20170411122830)
+  [1m[35m (84.4ms)[0m  CREATE TABLE `user_groups` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `description` text, `deleted_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20170411122830')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'my_apc'
+  AND fk.table_name = 'projects'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `projects`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'my_apc'
+  AND fk.table_name = 'user_groups'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `user_groups`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'my_apc'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/user_groups" for ::1 at 2017-04-11 20:29:17 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UserGroupsController#index as HTML
+  [1m[35mUserGroup Load (0.4ms)[0m  SELECT `user_groups`.* FROM `user_groups`
+  Rendered user_groups/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 579ms (Views: 576.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/user_groups.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-11 20:29:18 +0800
+
+
+Started GET "/assets/user_groups.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-11 20:29:18 +0800
+
+
+Started GET "/user_groups" for ::1 at 2017-04-11 20:29:22 +0800
+Processing by UserGroupsController#index as HTML
+  [1m[36mUserGroup Load (0.3ms)[0m  [1mSELECT `user_groups`.* FROM `user_groups`[0m
+  Rendered user_groups/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user_groups" for ::1 at 2017-04-11 20:31:39 +0800
+Processing by UserGroupsController#index as HTML
+  [1m[35mUserGroup Load (0.3ms)[0m  SELECT `user_groups`.* FROM `user_groups`
+  Rendered user_groups/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user_groups" for ::1 at 2017-04-11 20:32:10 +0800
+Processing by UserGroupsController#index as HTML
+  [1m[36mUserGroup Load (0.3ms)[0m  [1mSELECT `user_groups`.* FROM `user_groups`[0m
+  Rendered user_groups/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-11 20:32:11 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:32:12 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:32:14 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-11 20:32:15 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.3ms)
