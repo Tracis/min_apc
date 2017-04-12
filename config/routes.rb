@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  resources :user_groups
+  
+  resources :groups do
+    resources :users_groups
+  end
+
+  resources :projects do
+    resources :project_users
+  end
   resources :users
-  resources :projects
+
   
   root 'projects#index'
   # The priority is based upon order of creation: first created -> highest priority.

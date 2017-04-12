@@ -9,6 +9,7 @@ en:
       pages: "Pages"
   helpers:
     actions: "操作"
+    user_group_action: "用户组操作"
     links:
       back: "返回"
       cancel: "取消"
@@ -17,6 +18,8 @@ en:
       new: "新建"
       edit: "编辑"
       show: "查看详情"
+      show_users_groups: "查看成员"
+      add: "添加"
     titles:
       edit: "Edit %{model}"
       save: "Save %{model}"

@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170411122830) do
+ActiveRecord::Schema.define(version: 20170412033220) do
+
+  create_table "groups", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.text     "description", limit: 65535
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  create_table "project_users", force: :cascade do |t|
+    t.integer  "project_id",   limit: 4
+    t.integer  "user_id",      limit: 4
+    t.string   "project_role", limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "projects", force: :cascade do |t|
     t.string   "abbr_name",       limit: 255
@@ -22,6 +37,13 @@ ActiveRecord::Schema.define(version: 20170411122830) do
     t.datetime "deleted_at"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+  end
+
+  create_table "user_group_users", force: :cascade do |t|
+    t.integer  "user_group_id", limit: 4
+    t.integer  "user_id",       limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "user_groups", force: :cascade do |t|
@@ -39,5 +61,15 @@ ActiveRecord::Schema.define(version: 20170411122830) do
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
+
+  create_table "users_groups", id: false, force: :cascade do |t|
+    t.integer  "group_id",   limit: 4
+    t.integer  "user_id",    limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  add_index "users_groups", ["group_id"], name: "index_users_groups_on_group_id", using: :btree
+  add_index "users_groups", ["user_id"], name: "index_users_groups_on_user_id", using: :btree
 
 end
