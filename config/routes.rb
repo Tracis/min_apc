@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   
   resources :groups do
-    resources :users_groups
+    resources :users_groups do
+      collection do 
+        post "create_collection"
+      end
+    end
   end
 
   resources :projects do

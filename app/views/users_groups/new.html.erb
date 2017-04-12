@@ -2,3 +2,23 @@
 <div class="page-header">
   <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
 </div>
+<form role="form" method="post" action="/groups/<%=params[:group_id]%>/users_groups/create_collection">
+  <% @users_hash.each do |key, value|%>
+    <% if value %>
+	  <div class="form-group">
+	    <label class="checkbox-inline">
+	      <input name="id[]" type="checkbox" id=<%= key %> value=<%= key %>>
+	      <%= value %>
+	    </label>
+	  </div>
+	<% end %>
+  <% end %>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <input type="submit" value="提交" class="btn btn-primary" />
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                group_users_groups_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+</form>
+
