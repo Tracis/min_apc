@@ -40,7 +40,6 @@ class UsersGroupsController < ApplicationController
   def new
     @users_groups = UsersGroup.select(:user_id).where("group_id = ?", params[:group_id])
     @users = User.all
-    #p @users
     @users_hash = {}
 
     @users.each do |user|
@@ -51,10 +50,6 @@ class UsersGroupsController < ApplicationController
       @users_hash[_users_group.user_id] = false
     end
 
-    # p @users_hash
-
-    
-    # @user = Users.find(params[:id])
   end
 
   # GET /users_groups/1/edit

@@ -4,12 +4,14 @@
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dt><strong>用户名:</strong></dt>
   <dd><%= @user.name %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dt><strong>邮箱:</strong></dt>
   <dd><%= @user.email %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+  <dt><strong>描述:</strong></dt>
   <dd><%= @user.description %></dd>
+  <dt><strong>激活状态:</strong></dt>
+  <dd><%= @user.actived %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

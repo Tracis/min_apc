@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170412113637) do
+ActiveRecord::Schema.define(version: 20170412130741) do
 
   create_table "groups", force: :cascade do |t|
     t.string   "name",        limit: 255
@@ -43,8 +43,10 @@ ActiveRecord::Schema.define(version: 20170412113637) do
     t.text     "name",        limit: 65535
     t.string   "email",       limit: 255
     t.text     "description", limit: 65535
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
+    t.boolean  "actived",                   default: true
+    t.datetime "deleted_at"
   end
 
   create_table "users_groups", id: false, force: :cascade do |t|
