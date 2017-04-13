@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170412130741) do
+ActiveRecord::Schema.define(version: 20170413095033) do
 
   create_table "groups", force: :cascade do |t|
     t.string   "name",        limit: 255
@@ -27,6 +27,9 @@ ActiveRecord::Schema.define(version: 20170412130741) do
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
+
+  add_index "project_users", ["project_id"], name: "index_project_users_on_project_id", using: :btree
+  add_index "project_users", ["user_id"], name: "index_project_users_on_user_id", using: :btree
 
   create_table "projects", force: :cascade do |t|
     t.string   "abbr_name",       limit: 255
@@ -59,6 +62,4 @@ ActiveRecord::Schema.define(version: 20170412130741) do
   add_index "users_groups", ["group_id"], name: "index_users_groups_on_group_id", using: :btree
   add_index "users_groups", ["user_id"], name: "index_users_groups_on_user_id", using: :btree
 
-  add_foreign_key "users_groups", "groups"
-  add_foreign_key "users_groups", "users"
 end

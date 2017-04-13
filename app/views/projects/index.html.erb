@@ -1,6 +1,7 @@
 <%- model_class = Project -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <!-- <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>  -->
+  <h1>项目管理</h1>
 </div>
 <table class="table table-striped">
   <thead>
@@ -23,10 +24,12 @@
           <td><%= project.abbr_name %></td>
           <td><%= project.name %></td>
           <td><%= project.proj_types %></td>
-          <td><%= project.proj_start_time %></td>
-          <td><%= project.proj_end_time %></td>
+          <td><%= project.proj_start_time.strftime("%Y-%m-%d %H:%M:%S") %></td>
+          <td><%= project.proj_end_time.strftime("%Y-%m-%d %H:%M:%S") %></td>
           <td>
             <%= link_to t('.show_users_groups', :default => t("helpers.links.show_users_groups")),
+                        project_project_users_path(project), :class => 'btn btn-default btn-xs' %>
+            <%= link_to t('.show', :default => t("helpers.links.show")),
                         project_path(project), :class => 'btn btn-default btn-xs' %>
             <%= link_to t('.edit', :default => t("helpers.links.edit")),
                         edit_project_path(project), :class => 'btn btn-default btn-xs' %>

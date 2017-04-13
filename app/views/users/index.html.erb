@@ -1,15 +1,16 @@
 <%- model_class = User -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <!-- <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1> -->
+  <h1>用户管理</h1>
 </div>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:email) %></th>
-      <th><%= model_class.human_attribute_name(:description) %></th>
-      <th>状态</th>
+      <th>用户编号</th>
+      <th>用户名称</th>
+      <th>电子邮箱</th>
+      <th>描述</th>
+      <th>激活状态</th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>

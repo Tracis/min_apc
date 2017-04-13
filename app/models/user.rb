@@ -3,4 +3,7 @@ class User < ActiveRecord::Base
   has_many :users_groups, foreign_key: "user_id"
   has_many :groups, through: :users_groups
 
+  has_many :project_users, dependent: :destroy, foreign_key: "user_id"
+  has_many :projects, through: :project_users
+
 end
