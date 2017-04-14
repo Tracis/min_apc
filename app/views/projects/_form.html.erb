@@ -32,21 +32,25 @@
   <div class="form-group">
     <%= f.label :项目类型, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :proj_types, :class => 'form-control' %>
+      <%= select_tag "project[proj_types]", options_for_select({"外包项目" => "1", "内部项目" => "2"}), class: "form-control" %>
+      <!-- <%= f.text_field :proj_types, :class => 'form-control' %> -->
     </div>
     <%=f.error_span(:proj_types) %>
   </div>
   <div class="form-group">
     <%= f.label :项目开始时间, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :proj_start_time, :class => 'form-control' %>
+      <!-- <%= select_date Date.today, prefix: :start_date %> -->
+      <%= date_select "project", "proj_start_time", use_two_digit_numbers: true, end_year: 2100, :class => 'form-control' %>
+      <!-- <%= f.text_field :proj_start_time, :class => 'form-control' %> -->
     </div>
     <%=f.error_span(:proj_start_time) %>
   </div>
   <div class="form-group">
     <%= f.label :项目结束时间, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :proj_end_time, :class => 'form-control' %>
+      <%= date_select "project", "proj_end_time", use_two_digit_numbers: true, end_year: 2100, :class => 'form-control' %>
+      <!-- <%= f.text_field :proj_end_time, :class => 'form-control' %> -->
     </div>
     <%=f.error_span(:proj_end_time) %>
   </div>

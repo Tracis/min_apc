@@ -5,16 +5,18 @@
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong>项目编号:</strong></dt>
-  <dd><%= @project.abbr_name %></dd>
+<dt><strong>项目编号:</strong></dt>
+  <dd><%= @project.id %></dd>
   <dt><strong>项目简称:</strong></dt>
-  <dd><%= @project.name %></dd>
+  <dd><%= @project.abbr_name %></dd>
   <dt><strong>项目全称:</strong></dt>
-  <dd><%= @project.proj_types %></dd>
+  <dd><%= @project.name %></dd>
+  <dt><strong>项目类型:</strong></dt>
+  <dd><%= (Project::PROJECT_TYPES).key(@project.proj_types) %></dd>
   <dt><strong>项目开始时间:</strong></dt>
-  <dd><%= @project.proj_start_time.strftime("%Y-%m-%d %H:%M:%S")  %></dd>
+  <dd><%= @project.proj_start_time.strftime("%Y-%m-%d")  %></dd>
   <dt><strong>项目结束时间</strong></dt>
-  <dd><%= @project.proj_end_time.strftime("%Y-%m-%d %H:%M:%S")  %></dd>
+  <dd><%= @project.proj_end_time.strftime("%Y-%m-%d")  %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

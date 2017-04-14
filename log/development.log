@@ -24968,3 +24968,1712 @@ Processing by ProjectUsersController#index as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.`name` FROM `users` WHERE (id = 8)  ORDER BY `users`.`id` ASC LIMIT 1[0m
   Rendered project_users/index.html.erb within layouts/application (4.4ms)
 Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects/6/project_users/new" for ::1 at 2017-04-13 21:02:41 +0800
+Processing by ProjectUsersController#new as HTML
+  Parameters: {"project_id"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT `groups`.* FROM `groups`[0m
+  [1m[35mUsersGroup Load (0.3ms)[0m  SELECT `users_groups`.* FROM `users_groups`
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT id, name FROM `users`[0m
+  Rendered project_users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-13 21:02:46 +0800
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.3ms)[0m  SELECT `groups`.* FROM `groups`
+  Rendered groups/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-13 21:02:48 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-13 21:02:50 +0800
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.3ms)[0m  SELECT `groups`.* FROM `groups`
+  Rendered groups/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-04-13 21:02:52 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-13 21:02:54 +0800
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT `groups`.* FROM `groups`
+  Rendered groups/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-13 21:09:12 +0800
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT `groups`.* FROM `groups`[0m
+  Rendered groups/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-13 21:09:16 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:10:25 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:10:26 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.9ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:26 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:10:27 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:28 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:10:28 +0800
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT `groups`.* FROM `groups`
+  Rendered groups/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:29 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:10:29 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:30 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:10:30 +0800
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT `groups`.* FROM `groups`
+  Rendered groups/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:31 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:10:31 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:32 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:10:32 +0800
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT `groups`.* FROM `groups`
+  Rendered groups/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:32 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:33 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:10:33 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:10:34 +0800
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT `groups`.* FROM `groups`
+  Rendered groups/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:10:34 +0800
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT `groups`.* FROM `groups`[0m
+  Rendered groups/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:35 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:36 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:36 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:10:37 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 09:10:37 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:10:38 +0800
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT `groups`.* FROM `groups`[0m
+  Rendered groups/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:17:38 +0800
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.4ms)[0m  SELECT `groups`.* FROM `groups`
+  Rendered groups/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/new" for ::1 at 2017-04-14 09:17:41 +0800
+Processing by GroupsController#new as HTML
+  Rendered groups/_form.html.erb (1.9ms)
+  Rendered groups/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/groups" for ::1 at 2017-04-14 09:17:48 +0800
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"to+P5EJ8TCcS5APCIDPcyQ/OqcQmD9ku568zLqE+CcZcb7OLlajpJRTeK7Qb8IHo/WFNxq/mNcPsAqEYMgmuPA==", "group"=>{"name"=>"11", "description"=>"1"}, "commit"=>"提交"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `groups` (`name`, `description`, `created_at`, `updated_at`) VALUES ('11', '1', '2017-04-14 09:17:48', '2017-04-14 09:17:48')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/groups/5
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/5" for ::1 at 2017-04-14 09:17:48 +0800
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mGroup Load (0.3ms)[0m  SELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 5 LIMIT 1
+  Rendered groups/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:17:50 +0800
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT `groups`.* FROM `groups`[0m
+  Rendered groups/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/groups/5" for ::1 at 2017-04-14 09:17:53 +0800
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GXH/SR/9jeGuZwGrtkBvY0cX6jUw4G9lbrher/J3br/zkcMmyCko46hdKd2NgzJCtbgON7kJg4hlFcyZYUDJRQ==", "id"=>"5"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 5 LIMIT 1
+  [1m[36mUsersGroup Load (0.2ms)[0m  [1mSELECT `users_groups`.* FROM `users_groups` WHERE (group_id = 1 )[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `groups` WHERE `groups`.`id` = 5[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-04-14 09:17:53 +0800
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT `groups`.* FROM `groups`[0m
+  Rendered groups/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:17:54 +0800
+Processing by ProjectsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mac/RubyProject/min_apc/app/models/project.rb:5: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...h: {in: 3..255, wrong_length :"长度为%count，请输入...
+...                               ^
+/Users/mac/RubyProject/min_apc/app/models/project.rb:5: syntax error, unexpected '}', expecting keyword_end):
+  app/models/project.rb:5: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+  app/models/project.rb:5: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/projects_controller.rb:7:in `index'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (84.7ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:21:28 +0800
+Processing by ProjectsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/mac/RubyProject/min_apc/app/models/project.rb:5: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...me, in: 3..255, wrong_length :"长度为%count，请输入...
+...                               ^):
+  app/models/project.rb:5: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+  app/controllers/projects_controller.rb:7:in `index'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.5ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 09:25:22 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-04-14 09:25:24 +0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (2.8ms)
+  Rendered projects/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/projects" for ::1 at 2017-04-14 09:25:34 +0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9Vpa7NiTSbvSiPo8cwhD1R6stU9ysbtYu90gnUREXjwfumaDD0fsudSy0kpIyx707ANRTftYV7WwcLKr13P5xg==", "project"=>{"abbr_name"=>"1", "name"=>"132", "proj_types"=>"1", "proj_start_time"=>"19920210", "proj_end_time"=>"19930210"}, "commit"=>"提交"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered projects/_form.html.erb (2.9ms)
+  Rendered projects/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:11:36 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 197ms (Views: 186.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects/6/project_users" for ::1 at 2017-04-14 10:11:38 +0800
+Processing by ProjectUsersController#index as HTML
+  Parameters: {"project_id"=>"6"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  [1m[36mProjectUser Load (0.4ms)[0m  [1mSELECT `project_users`.* FROM `project_users` WHERE (project_id = '6')[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.`name` FROM `users` WHERE (id = 8)  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.`name` FROM `users` WHERE (id = 8)  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered project_users/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 85ms (Views: 74.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:11:40 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:11:41 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:11:42 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-04-14 10:11:44 +0800
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (4.1ms)
+  Rendered projects/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2017-04-14 10:12:34 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:12:35 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:12:37 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (1.1ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:12:41 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:12:43 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/_form.html.erb (3.1ms)
+  Rendered projects/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:12:46 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"flMm6kdTUPjVotgHzAVCzQ6Vm3JDV1UdXZo5JRPOOYmUsxqFkIf1+tOY8HH3xh/s/Dp/cMq+ufBWN6sTgPmecw==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "proj_start_time"=>"1992-02-10 00:00:00 +0800", "proj_end_time"=>"1992-03-12 00:00:00 +0800"}, "project_user"=>{"project_role"=>"1"}, "commit"=>"提交", "id"=>"6"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered projects/_form.html.erb (3.4ms)
+  Rendered projects/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:13:06 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 36.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:13:07 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.7ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/_form.html.erb (3.1ms)
+  Rendered projects/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:13:10 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W0hAoPSFtr7YQygHjnSBdLDYoPHhl2KjXH7EbDbh8MGxqHzPI1ETvN55AHG1t9xVQndE82h+jk5X01ZapdZXOw==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "proj_start_time"=>"1992-02-10 00:00:00 +0800", "proj_end_time"=>"1992-03-12 00:00:00 +0800"}, "project_user"=>{"project_role"=>"1"}, "commit"=>"提交", "id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:13:10 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:13:12 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:13:44 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/_form.html.erb (4.3ms)
+  Rendered projects/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:13:45 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7fvUvqs7SDkSHEfO8rvBQraSWqRzgbBK1vX6PBNVi+cHG+jRfO/tOxQmb7jJeJxjRD2+pvpoXKfdWGgKgGIsHQ==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "proj_start_time"=>"1992-02-10 00:00:00 +0800", "proj_end_time"=>"1992-03-12 00:00:00 +0800"}, "pproj_types"=>"1", "commit"=>"提交", "id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:13:45 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:13:47 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:14:28 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.7ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/_form.html.erb (3.9ms)
+  Rendered projects/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:14:29 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C8Kf3btlf/KpyNGVSAzQHYgeqilyux4XjiQTxEQf0LPhIqOybLHa8K/y+eNzz408erFOK/tS8vqFiYHy1yh3SQ==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "pproj_types"=>"1", "proj_start_time"=>"1992-02-10 00:00:00 +0800", "proj_end_time"=>"1992-03-12 00:00:00 +0800"}, "commit"=>"提交", "id"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+Unpermitted parameter: pproj_types
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:14:29 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:14:31 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:14:34 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/_form.html.erb (2.6ms)
+  Rendered projects/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:14:36 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Py6+L2++61VPPW9v2SRYVpNtKjFtQ4aCUp/IUUw2tDnVzoJAuGpOV0kHRxni5wV3YcLOM+Sqam9ZMlpn3wETww==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "pproj_types"=>"2", "proj_start_time"=>"1992-02-10 00:00:00 +0800", "proj_end_time"=>"1992-03-12 00:00:00 +0800"}, "commit"=>"提交", "id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+Unpermitted parameter: pproj_types
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:14:36 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:14:54 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:14:56 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/_form.html.erb (4.3ms)
+  Rendered projects/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:14:57 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jrjhM18F5s7JwHaI0gGjGp18fZweybUINIjjhECicYpkWN1ciNFDzM/6Xv7pwv47b9OZnpcgWeU/JXGy05XWcA==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "proj_types"=>"1", "proj_start_time"=>"1992-02-10 00:00:00 +0800", "proj_end_time"=>"1992-03-12 00:00:00 +0800"}, "commit"=>"提交", "id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `projects` SET `proj_types` = '1', `updated_at` = '2017-04-14 10:14:57' WHERE `projects`.`id` = 6[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:14:57 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 50.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:15:04 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:15:08 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:15:10 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (1.2ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:15:11 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:15:12 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:16:06 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:16:08 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/7/edit" for ::1 at 2017-04-14 10:16:10 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1[0m
+  Rendered projects/_form.html.erb (2.8ms)
+  Rendered projects/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/projects/7" for ::1 at 2017-04-14 10:16:12 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WZew/EfIym8Irlf7cXPhGs3kdjhrukor3EygXqvfUlWzd4yTkBxvbQ6Uf41KsLw7P0uSOuJTpsbX4TJoOOj1rw==", "project"=>{"abbr_name"=>"prj2", "name"=>"PRoject2", "proj_types"=>"2", "proj_start_time"=>"2014-06-06 00:00:00 +0800", "proj_end_time"=>"2014-07-08 00:00:00 +0800"}, "commit"=>"提交", "id"=>"7"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `projects` SET `proj_types` = '2', `updated_at` = '2017-04-14 10:16:12' WHERE `projects`.`id` = 7
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/7
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/projects/7" for ::1 at 2017-04-14 10:16:12 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:16:14 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/8/edit" for ::1 at 2017-04-14 10:16:15 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1
+  Rendered projects/_form.html.erb (3.3ms)
+  Rendered projects/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/projects/8" for ::1 at 2017-04-14 10:16:18 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w+F+UObE/8fhglRhDi+bLFPJY6bEXrH0KpQQCcU4EugpAUI/MRBaxee4fBc17MYNoWaHpE23XRkhOYI/Vg+1Eg==", "project"=>{"abbr_name"=>"prj3", "name"=>"Project3", "proj_types"=>"2", "proj_start_time"=>"2015-12-15 00:00:00 +0800", "proj_end_time"=>"2015-12-19 00:00:00 +0800"}, "commit"=>"提交", "id"=>"8"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `projects` SET `proj_types` = '2', `updated_at` = '2017-04-14 10:16:18' WHERE `projects`.`id` = 8[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects/8
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/projects/8" for ::1 at 2017-04-14 10:16:18 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:16:19 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:17:37 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:17:39 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:17:40 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:18:02 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `project' for #<#<Class:0x007f8effcab800>:0x007f8effeb9c28>):
+    12:   <dt><strong>项目全称:</strong></dt>
+    13:   <dd><%= @project.name %></dd>
+    14:   <dt><strong>项目类型:</strong></dt>
+    15:   <dd><%= (Project::PROJECT_TYPES).key(project.proj_types) %></dd>
+    16:   <dt><strong>项目开始时间:</strong></dt>
+    17:   <dd><%= @project.proj_start_time.strftime("%Y-%m-%d %H:%M:%S")  %></dd>
+    18:   <dt><strong>项目结束时间</strong></dt>
+  app/views/projects/show.html.erb:15:in `_app_views_projects_show_html_erb__3971687605241765626_70126077853800'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.7ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:18:12 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:18:14 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:18:48 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:18:50 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:19:10 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:19:11 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:19:13 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/6/project_users" for ::1 at 2017-04-14 10:19:14 +0800
+Processing by ProjectUsersController#index as HTML
+  Parameters: {"project_id"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  [1m[36mProjectUser Load (0.4ms)[0m  [1mSELECT `project_users`.* FROM `project_users` WHERE (project_id = '6')[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.`name` FROM `users` WHERE (id = 8)  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.`name` FROM `users` WHERE (id = 8)  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered project_users/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 60ms (Views: 54.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:23:05 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:23:07 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/_form.html.erb (32.1ms)
+  Rendered projects/edit.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:27:46 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/_form.html.erb (23.6ms)
+  Rendered projects/edit.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:29:56 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eZxTbyMNgliQrJ5oIF83nFlhVr3p0CtfPSpgo76qQkyTfG8A9NknWpaWth4bnGq9q86yv2A5x7I2h/KVLZ3ltg==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "proj_types"=>"1", "proj_start_time(1i)"=>"1992", "proj_start_time(2i)"=>"2", "proj_start_time(3i)"=>"10", "proj_start_time"=>"1992-02-10 00:00:00 +0800", "proj_end_time"=>"1992-03-12 00:00:00 +0800"}, "start_date"=>{"year"=>"2017", "month"=>"4", "day"=>"14"}, "commit"=>"提交", "id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:29:56 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:30:30 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:31:51 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:31:53 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/_form.html.erb (6.1ms)
+  Rendered projects/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:33:59 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/_form.html.erb (8.1ms)
+  Rendered projects/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:34:14 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/apple-touch-icon-144x144-precomposed.png" for ::1 at 2017-04-14 10:34:14 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-144x144-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.0ms)
+
+
+Started GET "/images/apple-touch-icon-114x114-precomposed.png" for ::1 at 2017-04-14 10:34:14 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-114x114-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.6ms)
+
+
+Started GET "/images/apple-touch-icon-72x72-precomposed.png" for ::1 at 2017-04-14 10:34:14 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-72x72-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (81.1ms)
+
+
+Started GET "/images/apple-touch-icon-precomposed.png" for ::1 at 2017-04-14 10:34:14 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (77.0ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2017-04-14 10:34:15 +0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.1ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2017-04-14 10:34:15 +0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.8ms)
+
+
+Started GET "/images/favicon.ico" for ::1 at 2017-04-14 10:34:15 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:34:25 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/apple-touch-icon-144x144-precomposed.png" for ::1 at 2017-04-14 10:34:25 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-144x144-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.2ms)
+
+
+Started GET "/images/apple-touch-icon-114x114-precomposed.png" for ::1 at 2017-04-14 10:34:25 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-114x114-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.8ms)
+
+
+Started GET "/images/apple-touch-icon-72x72-precomposed.png" for ::1 at 2017-04-14 10:34:26 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-72x72-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.1ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.8ms)
+
+
+Started GET "/images/apple-touch-icon-precomposed.png" for ::1 at 2017-04-14 10:34:26 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.1ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.4ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2017-04-14 10:34:26 +0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.1ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2017-04-14 10:34:26 +0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.1ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.3ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:34:26 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNhSe3mmFn6+LPoKpJk0SIIk2npUr1Z6RmSF0Iiz/eNyOG4UrnKzfLgW0nyfWmlpcIs+eN1GupdNyRfmG4RaGQ==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "proj_types"=>"1", "proj_start_time(1i)"=>"2017", "proj_start_time(2i)"=>"2", "proj_start_time(3i)"=>"10", "proj_end_time"=>"1992-03-12 00:00:00 +0800"}, "commit"=>"提交", "id"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `projects` SET `proj_start_time` = '2017-02-10 00:00:00', `updated_at` = '2017-04-14 10:34:26' WHERE `projects`.`id` = 6[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/images/favicon.ico" for ::1 at 2017-04-14 10:34:26 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.9ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.6ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mac/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.4ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:34:26 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (1.5ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:34:28 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:34:29 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (1.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/_form.html.erb (6.2ms)
+  Rendered projects/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:34:42 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:35:15 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects`[0m
+  Rendered projects/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6/edit" for ::1 at 2017-04-14 10:35:17 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.8ms)[0m  SELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+  Rendered projects/_form.html.erb (8.9ms)
+  Rendered projects/edit.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/projects/6" for ::1 at 2017-04-14 10:35:23 +0800
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MZA3jZhFXbkX9KQl+jgkvuY/R/3SLwvSueH6M4uUOtjbcAviT5H4uxHOjFPB+3mfFJCj/1vG5z+yTGgFGKOdIg==", "project"=>{"abbr_name"=>"prj1", "name"=>"Project1", "proj_types"=>"1", "proj_start_time(1i)"=>"2017", "proj_start_time(2i)"=>"2", "proj_start_time(3i)"=>"10", "proj_end_time(1i)"=>"2018", "proj_end_time(2i)"=>"3", "proj_end_time(3i)"=>"12"}, "commit"=>"提交", "id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `projects` SET `proj_end_time` = '2018-03-12 00:00:00', `updated_at` = '2017-04-14 10:35:23' WHERE `projects`.`id` = 6[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:35:23 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:35:24 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/6" for ::1 at 2017-04-14 10:35:42 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2017-04-14 10:35:44 +0800
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects`
+  Rendered projects/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.3ms)

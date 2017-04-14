@@ -23,9 +23,9 @@
           <td><%= link_to project.id, project_path(project) %></td>
           <td><%= project.abbr_name %></td>
           <td><%= project.name %></td>
-          <td><%= project.proj_types %></td>
-          <td><%= project.proj_start_time.strftime("%Y-%m-%d %H:%M:%S") %></td>
-          <td><%= project.proj_end_time.strftime("%Y-%m-%d %H:%M:%S") %></td>
+          <td><%= (Project::PROJECT_TYPES).key(project.proj_types) %></td>
+          <td><%= project.proj_start_time.strftime("%Y-%m-%d") %></td>
+          <td><%= project.proj_end_time.strftime("%Y-%m-%d") %></td>
           <td>
             <%= link_to t('.show_users_groups', :default => t("helpers.links.show_users_groups")),
                         project_project_users_path(project), :class => 'btn btn-default btn-xs' %>
