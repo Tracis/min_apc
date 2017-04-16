@@ -13,19 +13,21 @@ class GroupsController < ApplicationController
   end
 
   # GET /groups/new
+  # 新建用户组
   def new
     @group = Group.new
   end
 
   # GET /groups/1/edit
+  # 编辑用户组
   def edit
   end
 
   # POST /groups
   # POST /groups.json
+  # 执行创建用户组
   def create
     @group = Group.new(group_params)
-
     respond_to do |format|
       if @group.save
         format.html { redirect_to @group, notice: 'Group was successfully created.' }
@@ -39,6 +41,7 @@ class GroupsController < ApplicationController
 
   # PATCH/PUT /groups/1
   # PATCH/PUT /groups/1.json
+  # 更新用户组信息
   def update
     respond_to do |format|
       if @group.update(group_params)
@@ -53,8 +56,11 @@ class GroupsController < ApplicationController
 
   # DELETE /groups/1
   # DELETE /groups/1.json
+  # 删除用户组
   def destroy
-    UsersGroup.destroy_all("group_id = 1 ")
+    # 首先需要删除用户组内成员信息，也就是UsersGroup中该用户组的信息
+    UsersGroup.destroy_all(" group_id = 1 ")
+    # 然后才删除Group中用户组的信息
     @group.destroy
     respond_to do |format|
       format.html { redirect_to groups_url, notice: 'Group was successfully destroyed.' }

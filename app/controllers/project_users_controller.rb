@@ -1,13 +1,13 @@
 class ProjectUsersController < ApplicationController
   before_action :set_project_user, only: [:show, :edit, :update, :destroy]
-  protect_from_forgery
-  skip_before_action :verify_authenticity_token
+
 
   # GET /project_users
   # GET /project_users.json
+  # 项目成员列表页
   def index
     @project = Project.find(params[:project_id])
-    @project_users = ProjectUser.where("project_id = ?", params[:project_id])
+    @project_users = @project.project_users
   end
 
   # GET /project_users/1
@@ -16,12 +16,16 @@ class ProjectUsersController < ApplicationController
   end
 
   # GET /project_users/new
+  # 新建项目成员页
   def new
+    # 获取当前项目
     @project = Project.find(params[:project_id])
     @project_user = ProjectUser.new
+    # 获取所有用户组成员信息
     @users_groups = UsersGroup.all
+    # 用户的角色
     @project_roles = ProjectUser::PROJECT_ROLES
-    p @project_roles
+    # 获取所有用户的
     @users = User.select("id, name")
   end
 

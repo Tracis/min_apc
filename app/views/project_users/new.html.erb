@@ -1,6 +1,5 @@
 <%- model_class = ProjectUser -%>
 <div class="page-header">
-  <!-- <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1> -->
   <h1>新建项目成员</h1>
 </div>
 
@@ -21,40 +20,37 @@
     <div class="col-lg-offset-2 col-lg-10">
       <%= f.submit value: "提交", :class => 'btn btn-primary' %>
       <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                groups_path, :class => 'btn btn-default' %>
+                project_project_users_path(@project), :class => 'btn btn-default' %>
     </div>
   </div>
 
 <% end %>
 
-
+<!-- 根据选择的用户组，来确定用户的select -->
 <script type="text/javascript">
 
+  // 给用户组的select_tag添加监听器（有问题，现在只能监听select改变的事件）
   group_id.addEventListener('change', function(){
   	setValue(user_id, this.value);
   });
 
-
-
-function setValue(e,v){
-  e.options.length = 0;
-  var group_users = <%= raw @users_groups.to_json %>;
-  var users_id = group_users.filter(function(item){
-  	return item.group_id == v;
-  });
+  //根据用户组内的用户，为用户的select动态添加option
+  function setValue(e,v){
+    e.options.length = 0;
+    var group_users = <%= raw @users_groups.to_json %>;
+    var users_id = group_users.filter(function(item){
+  	  return item.group_id == v;
+    });
   
+    var users_all = <%= raw @users.to_json %>
 
-  var users_all = <%= raw @users.to_json %>
-
-
-  for(i in users_id){
-    var o = document.createElement('option');
-    o.text = users_all.filter(function(item){
-    	return item.id == users_id[i].user_id;
-    })[0].name;
-    o.value = users_id[i].user_id;
-    console.log(o.value);
-    e.add(o, null);
+    for(i in users_id){
+      var o = document.createElement('option');
+      o.text = users_all.filter(function(item){
+    	  return item.id == users_id[i].user_id;
+      })[0].name;
+      o.value = users_id[i].user_id;
+      e.add(o, null);
   }
 }
 </script>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170413095033) do
+ActiveRecord::Schema.define(version: 20170416143312) do
 
   create_table "groups", force: :cascade do |t|
     t.string   "name",        limit: 255
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20170413095033) do
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
+
+  add_index "groups", ["name"], name: "index_groups_on_name", unique: true, using: :btree
 
   create_table "project_users", force: :cascade do |t|
     t.integer  "project_id",   limit: 4
@@ -42,8 +44,10 @@ ActiveRecord::Schema.define(version: 20170413095033) do
     t.datetime "updated_at",                  null: false
   end
 
+  add_index "projects", ["abbr_name"], name: "index_projects_on_abbr_name", unique: true, using: :btree
+
   create_table "users", force: :cascade do |t|
-    t.text     "name",        limit: 65535
+    t.string   "name",        limit: 255
     t.string   "email",       limit: 255
     t.text     "description", limit: 65535
     t.datetime "created_at",                               null: false
@@ -51,6 +55,8 @@ ActiveRecord::Schema.define(version: 20170413095033) do
     t.boolean  "actived",                   default: true
     t.datetime "deleted_at"
   end
+
+  add_index "users", ["name"], name: "index_users_on_name", unique: true, using: :btree
 
   create_table "users_groups", id: false, force: :cascade do |t|
     t.integer  "group_id",   limit: 4

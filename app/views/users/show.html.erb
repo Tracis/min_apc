@@ -1,6 +1,5 @@
 <%- model_class = User -%>
 <div class="page-header">
-  <!-- <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1> -->
   <h1>用户详情</h1>
 </div>
 
@@ -12,7 +11,7 @@
   <dt><strong>描述:</strong></dt>
   <dd><%= @user.description %></dd>
   <dt><strong>激活状态:</strong></dt>
-  <dd><%= @user.actived %></dd>
+  <dd><%= (User::ACTIVE_STATUS).key(@user.actived) %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

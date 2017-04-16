@@ -9,10 +9,12 @@ class UsersController < ApplicationController
 
   # GET /users/1
   # GET /users/1.json
+  # 用户详情页
   def show
   end
 
   # GET /users/new
+  # 新建用户页
   def new
     @user = User.new
   end
@@ -23,6 +25,7 @@ class UsersController < ApplicationController
 
   # POST /users
   # POST /users.json
+  # 创建用户
   def create
     @user = User.new(user_params)
 
@@ -40,6 +43,7 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
+  # 更新用户信息
   def update
     respond_to do |format|
       if @user.update(user_params)
@@ -55,6 +59,7 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   # DELETE /users/1.json
+  # 删除用户信息
   def destroy
     UsersGroup.where("user_id = ?", @user.id).delete_all
     @user.destroy

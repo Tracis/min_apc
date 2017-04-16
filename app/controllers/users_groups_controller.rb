@@ -1,5 +1,5 @@
 class UsersGroupsController < ApplicationController
-  protect_from_forgery
+  # protect_from_forgery
   skip_before_action :verify_authenticity_token
 
   # GET /users_groups
@@ -13,17 +13,15 @@ class UsersGroupsController < ApplicationController
   def show
   end
 
+  # 在用户组中加入多个成员
   def create_collection
     group_id = params[:group_id]
     params[:id].each do |user_id|
       para = ActionController::Parameters.new({ users_group: { group_id: group_id, user_id: user_id }})
       permitted = para.require(:users_group).permit(:group_id, :user_id) 
       @users_group = UsersGroup.new(permitted)
-
       @users_group.save
-
     end
-
     respond_to do |format|
         if @users_group.save
           format.html { redirect_to group_users_groups_path, notice: '添加用户成功!' and return }
@@ -37,6 +35,7 @@ class UsersGroupsController < ApplicationController
   end
 
   # GET /users_groups/new
+  # 新建用户组成员
   def new
     @users_groups = UsersGroup.select(:user_id).where("group_id = ?", params[:group_id])
     @users = User.all

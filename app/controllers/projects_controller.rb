@@ -18,11 +18,13 @@ class ProjectsController < ApplicationController
   end
 
   # GET /projects/1/edit
+  # 编辑项目页
   def edit
   end
 
   # POST /projects
   # POST /projects.json
+  # 创建项目
   def create
     @project = Project.new(project_params)
 
@@ -39,6 +41,7 @@ class ProjectsController < ApplicationController
 
   # PATCH/PUT /projects/1
   # PATCH/PUT /projects/1.json
+  # 更新项目
   def update
     respond_to do |format|
       if @project.update(project_params)

@@ -24,8 +24,6 @@
         <td><%= User.select("name").where("id = ?", project_user.user_id).first.name %></td>
         <td><%= (ProjectUser::PROJECT_ROLES).key(project_user.project_role) %></td>
         <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_project_project_user_path(@project, project_user), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       project_project_user_path(@project, project_user),
                       :method => :delete,
